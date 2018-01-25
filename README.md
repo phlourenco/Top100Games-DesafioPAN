@@ -1,6 +1,6 @@
 # Top 100 Games - Desafio Banco PAN
 
-Aplicativo para o processo de seleço do Banco PAN.
+Aplicativo para o processo de seleção do Banco PAN.
 
 Desenvolvido por Paulo Henrique Lima Lourenço.
 
@@ -29,7 +29,7 @@ Utilizar a API do Twitch: https://dev.twitch.tv/docs/v5/reference/games/.
 - Tratamento de falha de conexão: Avise o usuário quando o download dos jogos falhar por falta de conexão.
 - Pull to refresh.
 
-## EXTRA: Testes unitários
+## BÔNUS: Testes unitários
 
 Há duas funções de testes unitários. 
 
