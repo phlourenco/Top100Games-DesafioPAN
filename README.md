@@ -44,6 +44,12 @@ A outra função é para verificar se a tela de detalhes realmente é preenchida
 - Swift 3.2
 - CocoaPods
 
+## Arquitetura utilizada
+
+Neste projeto estou utilizando MVVM (Movel-View-ViewModel) por ser um dos melhores padrões de arquitetura para desenvolvimento iOS.
+
+Mais informações: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel
+
 ## Pods utilizados
 
 #### Alamofire (https://github.com/Alamofire/Alamofire)
