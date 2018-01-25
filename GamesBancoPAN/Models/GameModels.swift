@@ -8,13 +8,23 @@
 import Foundation
 import SwiftyJSON
 
-class GameModel {
-    var details: GameDetails! //propertie "game" in response json
+struct GameModel {
+    var details: GameDetails! //propertie "game" in response's json
     var viewers: Int = 0
     var channels: Int = 0
     
     var game: Game? //coredata model
-//    var delegate: ImageLoadDelegate?
+        
+    init() {}
+    
+    init(name: String, viewers: Int, channels: Int) {
+        var details = GameDetails()
+        details.name = name
+        
+        self.details = details
+        self.viewers = viewers
+        self.channels = channels
+    }
     
     init(json: JSON) {
         if let _ = json["game"].dictionary {
@@ -30,6 +40,7 @@ class GameModel {
         }
     }
     
+    //Creates according to CoreData model
     init(game: Game) {
         self.game = game
         

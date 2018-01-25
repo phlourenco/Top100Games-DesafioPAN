@@ -18,12 +18,3 @@ extension UIViewController {
     }
     
 }
-
-//enum ImageType: Int {
-//    case medium, large
-//}
-
-//protocol ImageLoadDelegate {
-//    func loadedImage(type: ImageType, image: UIImage)
-//}
-

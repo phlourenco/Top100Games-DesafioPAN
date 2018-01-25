@@ -13,6 +13,7 @@ class ListVC: UIViewController {
     
     //outlets
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var refreshBtn: UIBarButtonItem!
     //vars
     let gamesViewModel = GamesViewModel()
     var refreshControl: UIRefreshControl? = nil
@@ -27,9 +28,7 @@ class ListVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-//        showAlert(title: "Sem conexão com a internet", message: "\(Utils.isConnected())")
-        
+                
         //Avoid list update when it returns from the details screen
         if gamesViewModel.topGames.count == 0 {
             fetchTopGames(next: false)
@@ -41,12 +40,14 @@ class ListVC: UIViewController {
         let offset = next ? gamesViewModel.topGames.count : 0
         
         if Utils.isConnected() {
+            self.refreshBtn.isEnabled = false
             gamesViewModel.getTop(offset: offset, completed: { (isOk) in
                 if isOk {
                     self.collectionView.reloadData()
                     self.collectionView.finishInfiniteScroll()
                     self.refreshControl?.endRefreshing()
                 } else {
+                    self.refreshBtn.isEnabled = true
                     self.showAlert(title: "Erro", message: "Ocorreu um erro. Verifique sua conexão e tente novamente.")
                 }
             })
@@ -61,7 +62,8 @@ class ListVC: UIViewController {
                     self.refreshControl?.endRefreshing()
                     
                 } else {
-                    self.showAlert(title: "Sem conexão com a internet", message: "Não foi possível obter os dados da internet.")
+                    self.showAlert(title: "Sem conexão com a internet", message: "Não foi possível conectar ao servidor do Twitch e não há dados salvos a serem exibidos.")
+                    self.refreshBtn.isEnabled = true
                 }
             })
         }
@@ -73,7 +75,7 @@ class ListVC: UIViewController {
         collectionView.addSubview(refreshControl!)
     }
     
-    func refreshAction() {
+    @IBAction func refreshAction() {
         fetchTopGames(next: false)
     }
     
@@ -85,7 +87,6 @@ class ListVC: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
     }
-    
     
     func setupInfiniteScroll() {
         collectionView.infiniteScrollIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)

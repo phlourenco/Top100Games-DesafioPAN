@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B109491201A3E1C00E6A54D /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B109490201A3E1B00E6A54D /* AboutVC.swift */; };
 		4B8683CC2018F38B00C1773E /* Game+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8683CA2018F38A00C1773E /* Game+CoreDataClass.swift */; };
 		4B8683CD2018F38B00C1773E /* Game+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8683CB2018F38A00C1773E /* Game+CoreDataProperties.swift */; };
 		4B8683D02018F50C00C1773E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8683CF2018F50C00C1773E /* Utils.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B109490201A3E1B00E6A54D /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		4B8683CA2018F38A00C1773E /* Game+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Game+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4B8683CB2018F38A00C1773E /* Game+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Game+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4B8683CF2018F50C00C1773E /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			children = (
 				4BD866472017D21E00191F73 /* ListVC.swift */,
 				4BD8667D20182F9900191F73 /* DetailsVC.swift */,
+				4B109490201A3E1B00E6A54D /* AboutVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -399,7 +402,6 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CollectionViewGridLayout/CollectionViewGridLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/UIScrollView-InfiniteScroll/UIScrollView_InfiniteScroll.framework",
 			);
@@ -408,7 +410,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionViewGridLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIScrollView_InfiniteScroll.framework",
 			);
@@ -438,9 +439,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GamesBancoPANTests/Pods-GamesBancoPANTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -467,6 +473,7 @@
 				4BD8664E2017D21F00191F73 /* GamesBancoPAN.xcdatamodeld in Sources */,
 				4B8683D22018FB9B00C1773E /* Extensions.swift in Sources */,
 				4BD866462017D21E00191F73 /* AppDelegate.swift in Sources */,
+				4B109491201A3E1C00E6A54D /* AboutVC.swift in Sources */,
 				4BD8667A2017F5B800191F73 /* GameList.swift in Sources */,
 				4BD866742017ECB000191F73 /* GameCell.swift in Sources */,
 				4BD8667E20182F9900191F73 /* DetailsVC.swift in Sources */,
@@ -664,7 +671,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.phlourenco.GamesBancoPANTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GamesBancoPAN.app/GamesBancoPAN";
 			};
@@ -682,7 +689,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.phlourenco.GamesBancoPANTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GamesBancoPAN.app/GamesBancoPAN";
 			};

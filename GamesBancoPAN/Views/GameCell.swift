@@ -23,14 +23,7 @@ class GameCell: UICollectionViewCell {
         super.awakeFromNib()
     }
     
-//    override func prepareForReuse() {
-//        super.prepareForReuse()
-//        //prevent image to repeat and
-//        imgView.image = nil
-//    }
-    
     func configureCell(game: GameModel) {
-//        game.delegate = self
         imgView.image = nil
         if game.game == nil, let img = game.details.box.medium {
             imgView.sd_setImage(with: URL(string: img), completed: { (image, error, cacheType, url) in
@@ -43,15 +36,6 @@ class GameCell: UICollectionViewCell {
     }
     
 }
-
-//extension GameCell: ImageLoadDelegate {
-//    
-//    func loadedImage(type: ImageType, image: UIImage) {
-//        print("loadedImage")
-//        imgView.image = image
-//    }
-//    
-//}
 
 
 

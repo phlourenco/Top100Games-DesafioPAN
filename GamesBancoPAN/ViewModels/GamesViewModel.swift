@@ -29,7 +29,6 @@ class GamesViewModel {
                 return
             }
             
-            
             if offset == 0 {
                 print("First page - cleaning list...")
                 self.topGames = [] //if it's first page, clear list
@@ -62,6 +61,12 @@ class GamesViewModel {
             }
         }
         
+        guard allSavedGames.count >= offset+limit else {
+            print("ops!!")
+            completed(false, 0)
+            return
+        }
+        
         let temp10games = allSavedGames[offset..<offset+limit]
         
         for item in temp10games {
@@ -88,7 +93,6 @@ class GamesViewModel {
         Alamofire.request(mediumImg).responseData { (response) in
             if let data = response.data {
                 tempGame.mediumImage = data as NSData
-//                game.delegate?.loadedImage(type: .medium, image: UIImage(data: data)!)
                 self.appDelegate.saveContext()
             }
         }

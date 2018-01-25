@@ -19,12 +19,17 @@ class DetailsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         bindUI(game)
     }
     
     func bindUI(_ game: GameModel) {
-        if game.game == nil, let img = game.details.box.large {
+        print("\(game.details)")
+        if game.game == nil, let imgBox = game.details.box, let img = imgBox.large {
             //Load image from link
             imgView.sd_setImage(with: URL(string: img))
         } else if let gamecd = game.game, let largeImage = gamecd.largeImage {

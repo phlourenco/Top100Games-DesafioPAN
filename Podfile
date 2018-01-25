@@ -8,7 +8,7 @@ target 'GamesBancoPAN' do
   # Pods for GamesBancoPAN
   pod 'Alamofire'
   pod 'SDWebImage'
-  pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
+  #pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
   pod 'SwiftyJSON'
   pod 'CollectionViewGridLayout'
   pod 'UIScrollView-InfiniteScroll', '~> 1.0.0'
@@ -16,6 +16,8 @@ target 'GamesBancoPAN' do
   target 'GamesBancoPANTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
   end
 
 end
