@@ -1,0 +1,6 @@
+framework module Pods_GamesBancoPANTests {
+  umbrella header "Pods-GamesBancoPANTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

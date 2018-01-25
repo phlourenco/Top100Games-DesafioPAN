@@ -7,13 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B8683CC2018F38B00C1773E /* Game+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8683CA2018F38A00C1773E /* Game+CoreDataClass.swift */; };
+		4B8683CD2018F38B00C1773E /* Game+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8683CB2018F38A00C1773E /* Game+CoreDataProperties.swift */; };
+		4B8683D02018F50C00C1773E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8683CF2018F50C00C1773E /* Utils.swift */; };
+		4B8683D22018FB9B00C1773E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8683D12018FB9B00C1773E /* Extensions.swift */; };
 		4BD866462017D21E00191F73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD866452017D21E00191F73 /* AppDelegate.swift */; };
-		4BD866482017D21E00191F73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD866472017D21E00191F73 /* ViewController.swift */; };
+		4BD866482017D21E00191F73 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD866472017D21E00191F73 /* ListVC.swift */; };
 		4BD8664B2017D21F00191F73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD866492017D21F00191F73 /* Main.storyboard */; };
 		4BD8664E2017D21F00191F73 /* GamesBancoPAN.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4BD8664C2017D21F00191F73 /* GamesBancoPAN.xcdatamodeld */; };
 		4BD866502017D21F00191F73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD8664F2017D21F00191F73 /* Assets.xcassets */; };
 		4BD866532017D21F00191F73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD866512017D21F00191F73 /* LaunchScreen.storyboard */; };
 		4BD8665E2017D21F00191F73 /* GamesBancoPANTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD8665D2017D21F00191F73 /* GamesBancoPANTests.swift */; };
+		4BD8666E2017D60900191F73 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD8666D2017D60900191F73 /* APIManager.swift */; };
+		4BD866702017D6CF00191F73 /* GamesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD8666F2017D6CF00191F73 /* GamesAPI.swift */; };
+		4BD866722017E74500191F73 /* GamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD866712017E74500191F73 /* GamesViewModel.swift */; };
+		4BD866742017ECB000191F73 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD866732017ECB000191F73 /* GameCell.swift */; };
+		4BD866782017F26700191F73 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD866772017F26700191F73 /* RoundedShadowView.swift */; };
+		4BD8667A2017F5B800191F73 /* GameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD866792017F5B800191F73 /* GameList.swift */; };
+		4BD8667C2017F71D00191F73 /* GameModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD8667B2017F71D00191F73 /* GameModels.swift */; };
+		4BD8667E20182F9900191F73 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD8667D20182F9900191F73 /* DetailsVC.swift */; };
+		4BD866802018380700191F73 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD8667F2018380700191F73 /* CircleView.swift */; };
+		8CD772EE175C744946EBBC21 /* Pods_GamesBancoPAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2BA40F201B8D7425BBEB8D /* Pods_GamesBancoPAN.framework */; };
+		CF7C0FBF81D0DC300700B08E /* Pods_GamesBancoPANTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E956635405CA054B352D532 /* Pods_GamesBancoPANTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B8683CA2018F38A00C1773E /* Game+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Game+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4B8683CB2018F38A00C1773E /* Game+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Game+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4B8683CF2018F50C00C1773E /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		4B8683D12018FB9B00C1773E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4BD866422017D21E00191F73 /* GamesBancoPAN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamesBancoPAN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD866452017D21E00191F73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4BD866472017D21E00191F73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4BD866472017D21E00191F73 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
 		4BD8664A2017D21F00191F73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4BD8664D2017D21F00191F73 /* GamesBancoPAN.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GamesBancoPAN.xcdatamodel; sourceTree = "<group>"; };
 		4BD8664F2017D21F00191F73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +57,21 @@
 		4BD866592017D21F00191F73 /* GamesBancoPANTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GamesBancoPANTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD8665D2017D21F00191F73 /* GamesBancoPANTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesBancoPANTests.swift; sourceTree = "<group>"; };
 		4BD8665F2017D21F00191F73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD8666D2017D60900191F73 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		4BD8666F2017D6CF00191F73 /* GamesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesAPI.swift; sourceTree = "<group>"; };
+		4BD866712017E74500191F73 /* GamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewModel.swift; sourceTree = "<group>"; };
+		4BD866732017ECB000191F73 /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		4BD866772017F26700191F73 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		4BD866792017F5B800191F73 /* GameList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameList.swift; sourceTree = "<group>"; };
+		4BD8667B2017F71D00191F73 /* GameModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModels.swift; sourceTree = "<group>"; };
+		4BD8667D20182F9900191F73 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		4BD8667F2018380700191F73 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		5F21AA4CAA5DC9938568B0E9 /* Pods-GamesBancoPAN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GamesBancoPAN.release.xcconfig"; path = "Pods/Target Support Files/Pods-GamesBancoPAN/Pods-GamesBancoPAN.release.xcconfig"; sourceTree = "<group>"; };
+		7E956635405CA054B352D532 /* Pods_GamesBancoPANTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GamesBancoPANTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9188FF880AA5F575560A735B /* Pods-GamesBancoPAN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GamesBancoPAN.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GamesBancoPAN/Pods-GamesBancoPAN.debug.xcconfig"; sourceTree = "<group>"; };
+		943B04CE1DB1649307057BA6 /* Pods-GamesBancoPANTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GamesBancoPANTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GamesBancoPANTests/Pods-GamesBancoPANTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ADC8E08356BAE4E4C18706F9 /* Pods-GamesBancoPANTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GamesBancoPANTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GamesBancoPANTests/Pods-GamesBancoPANTests.release.xcconfig"; sourceTree = "<group>"; };
+		BA2BA40F201B8D7425BBEB8D /* Pods_GamesBancoPAN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GamesBancoPAN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD772EE175C744946EBBC21 /* Pods_GamesBancoPAN.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +87,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF7C0FBF81D0DC300700B08E /* Pods_GamesBancoPANTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B8683CE2018F49400C1773E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4B8683CF2018F50C00C1773E /* Utils.swift */,
+				4B8683D12018FB9B00C1773E /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		4BD866392017D21E00191F73 = {
 			isa = PBXGroup;
 			children = (
+				4B8683CA2018F38A00C1773E /* Game+CoreDataClass.swift */,
+				4B8683CB2018F38A00C1773E /* Game+CoreDataProperties.swift */,
 				4BD866442017D21E00191F73 /* GamesBancoPAN */,
 				4BD8665C2017D21F00191F73 /* GamesBancoPANTests */,
 				4BD866432017D21E00191F73 /* Products */,
+				6416F4FF9C346B32EFA9712C /* Pods */,
+				B8F673B63F3E344AC465818F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,11 +128,16 @@
 		4BD866442017D21E00191F73 /* GamesBancoPAN */ = {
 			isa = PBXGroup;
 			children = (
+				4BD8666C2017D5CA00191F73 /* Services */,
+				4BD866692017D31100191F73 /* ViewModels */,
+				4BD8666A2017D31600191F73 /* Models */,
+				4BD8666B2017D35D00191F73 /* Views */,
+				4BD866752017EED700191F73 /* Controllers */,
+				4BD866762017F23300191F73 /* Custom Views */,
+				4BD866682017D2C500191F73 /* Storyboards */,
+				4B8683CE2018F49400C1773E /* Utils */,
 				4BD866452017D21E00191F73 /* AppDelegate.swift */,
-				4BD866472017D21E00191F73 /* ViewController.swift */,
-				4BD866492017D21F00191F73 /* Main.storyboard */,
 				4BD8664F2017D21F00191F73 /* Assets.xcassets */,
-				4BD866512017D21F00191F73 /* LaunchScreen.storyboard */,
 				4BD866542017D21F00191F73 /* Info.plist */,
 				4BD8664C2017D21F00191F73 /* GamesBancoPAN.xcdatamodeld */,
 			);
@@ -99,6 +153,87 @@
 			path = GamesBancoPANTests;
 			sourceTree = "<group>";
 		};
+		4BD866682017D2C500191F73 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4BD866492017D21F00191F73 /* Main.storyboard */,
+				4BD866512017D21F00191F73 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4BD866692017D31100191F73 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4BD866712017E74500191F73 /* GamesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4BD8666A2017D31600191F73 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4BD866792017F5B800191F73 /* GameList.swift */,
+				4BD8667B2017F71D00191F73 /* GameModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4BD8666B2017D35D00191F73 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4BD866732017ECB000191F73 /* GameCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4BD8666C2017D5CA00191F73 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4BD8666D2017D60900191F73 /* APIManager.swift */,
+				4BD8666F2017D6CF00191F73 /* GamesAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4BD866752017EED700191F73 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BD866472017D21E00191F73 /* ListVC.swift */,
+				4BD8667D20182F9900191F73 /* DetailsVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4BD866762017F23300191F73 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				4BD866772017F26700191F73 /* RoundedShadowView.swift */,
+				4BD8667F2018380700191F73 /* CircleView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		6416F4FF9C346B32EFA9712C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9188FF880AA5F575560A735B /* Pods-GamesBancoPAN.debug.xcconfig */,
+				5F21AA4CAA5DC9938568B0E9 /* Pods-GamesBancoPAN.release.xcconfig */,
+				943B04CE1DB1649307057BA6 /* Pods-GamesBancoPANTests.debug.xcconfig */,
+				ADC8E08356BAE4E4C18706F9 /* Pods-GamesBancoPANTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B8F673B63F3E344AC465818F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA2BA40F201B8D7425BBEB8D /* Pods_GamesBancoPAN.framework */,
+				7E956635405CA054B352D532 /* Pods_GamesBancoPANTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +241,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD866622017D21F00191F73 /* Build configuration list for PBXNativeTarget "GamesBancoPAN" */;
 			buildPhases = (
+				A2205120CA28533D296E2442 /* [CP] Check Pods Manifest.lock */,
 				4BD8663E2017D21E00191F73 /* Sources */,
 				4BD8663F2017D21E00191F73 /* Frameworks */,
 				4BD866402017D21E00191F73 /* Resources */,
+				C26951B386B8FDE5089A5FF0 /* [CP] Embed Pods Frameworks */,
+				CBEF07997D97E114E7F5F041 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD866652017D21F00191F73 /* Build configuration list for PBXNativeTarget "GamesBancoPANTests" */;
 			buildPhases = (
+				67442343156F01CE4DF5C0AA /* [CP] Check Pods Manifest.lock */,
 				4BD866552017D21F00191F73 /* Sources */,
 				4BD866562017D21F00191F73 /* Frameworks */,
 				4BD866572017D21F00191F73 /* Resources */,
+				F166CEADFFEF96AEDCF169EE /* [CP] Embed Pods Frameworks */,
+				981E79DFA83261BEFC571EBC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,14 +337,139 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67442343156F01CE4DF5C0AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GamesBancoPANTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		981E79DFA83261BEFC571EBC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GamesBancoPANTests/Pods-GamesBancoPANTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2205120CA28533D296E2442 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GamesBancoPAN-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C26951B386B8FDE5089A5FF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GamesBancoPAN/Pods-GamesBancoPAN-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CollectionViewGridLayout/CollectionViewGridLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/UIScrollView-InfiniteScroll/UIScrollView_InfiniteScroll.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionViewGridLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIScrollView_InfiniteScroll.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GamesBancoPAN/Pods-GamesBancoPAN-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBEF07997D97E114E7F5F041 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GamesBancoPAN/Pods-GamesBancoPAN-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F166CEADFFEF96AEDCF169EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GamesBancoPANTests/Pods-GamesBancoPANTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4BD8663E2017D21E00191F73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD866482017D21E00191F73 /* ViewController.swift in Sources */,
+				4BD866802018380700191F73 /* CircleView.swift in Sources */,
+				4BD866702017D6CF00191F73 /* GamesAPI.swift in Sources */,
+				4BD8667C2017F71D00191F73 /* GameModels.swift in Sources */,
+				4BD8666E2017D60900191F73 /* APIManager.swift in Sources */,
+				4BD866722017E74500191F73 /* GamesViewModel.swift in Sources */,
+				4B8683CC2018F38B00C1773E /* Game+CoreDataClass.swift in Sources */,
+				4BD866482017D21E00191F73 /* ListVC.swift in Sources */,
+				4B8683D02018F50C00C1773E /* Utils.swift in Sources */,
+				4B8683CD2018F38B00C1773E /* Game+CoreDataProperties.swift in Sources */,
+				4BD866782017F26700191F73 /* RoundedShadowView.swift in Sources */,
 				4BD8664E2017D21F00191F73 /* GamesBancoPAN.xcdatamodeld in Sources */,
+				4B8683D22018FB9B00C1773E /* Extensions.swift in Sources */,
 				4BD866462017D21E00191F73 /* AppDelegate.swift in Sources */,
+				4BD8667A2017F5B800191F73 /* GameList.swift in Sources */,
+				4BD866742017ECB000191F73 /* GameCell.swift in Sources */,
+				4BD8667E20182F9900191F73 /* DetailsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,36 +620,41 @@
 		};
 		4BD866632017D21F00191F73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9188FF880AA5F575560A735B /* Pods-GamesBancoPAN.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W8W67XPP2J;
 				INFOPLIST_FILE = GamesBancoPAN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.phlourenco.GamesBancoPAN;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phlourenco.GamesDesafioPAN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		4BD866642017D21F00191F73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F21AA4CAA5DC9938568B0E9 /* Pods-GamesBancoPAN.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W8W67XPP2J;
 				INFOPLIST_FILE = GamesBancoPAN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.phlourenco.GamesBancoPAN;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phlourenco.GamesDesafioPAN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		4BD866662017D21F00191F73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 943B04CE1DB1649307057BA6 /* Pods-GamesBancoPANTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -401,6 +672,7 @@
 		};
 		4BD866672017D21F00191F73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADC8E08356BAE4E4C18706F9 /* Pods-GamesBancoPANTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
