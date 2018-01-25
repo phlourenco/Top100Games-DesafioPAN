@@ -13,6 +13,19 @@ Desenvolvido por Paulo Henrique Lima Lourenço.
 <img src="https://i.imgur.com/ynjhhdo.png" height="300">
 <img src="https://i.imgur.com/s9Ohkrw.png" height="300">
 
+Print 1 - Tela inicial + pull to refresh
+
+Print 2 - scroll infinito
+
+Print 3 - tela de detalhes
+
+Print 4 - tela sobe
+
+Print 5 - Mensagem quando está sem conexão e não há dados salvos no CoreData
+
+Print 6 - Jogos salvos no CoreData + mensagem explicativa
+
+
 ## Desafio
 
 O objetivo do teste é fazer uma lista em grid com a imagem e o nome do jogo e uma tela de detalhes com a imagem, nome do jogo, contador de canais e quantidade de visualizações.
