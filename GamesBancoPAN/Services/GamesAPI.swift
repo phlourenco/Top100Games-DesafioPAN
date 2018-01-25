@@ -24,7 +24,7 @@ class GamesAPI {
         Alamofire.request(url, method: .get, encoding: JSONEncoding.default).responseJSON { (response) in
             
             print(response.result)
-            
+        
             if let value = response.result.value {
                 let json = JSON(value)
                 print(json)

@@ -44,7 +44,7 @@ class GamesViewModel {
         }
     }
     
-    func getTopSaved(limit: Int = 10, offset: Int = 0,  completed: @escaping (_ isOk: Bool, _ count: Int) -> ()) {
+    func getTopSaved(limit: Int = 10, offset: Int = 0,  completed: @escaping (_ isOk: Bool) -> ()) {
         
         print("getTopSaved: limit=\(limit) offset=\(offset)")
         
@@ -56,14 +56,14 @@ class GamesViewModel {
                 allSavedGames = try context.fetch(Game.fetchRequest())
             } catch {
                 print("getTopSaved error: \(error.localizedDescription)")
-                completed(false, 0)
+                completed(false)
                 return
             }
         }
         
         guard allSavedGames.count >= offset+limit else {
             print("ops!!")
-            completed(false, 0)
+            completed(false)
             return
         }
         
@@ -73,7 +73,7 @@ class GamesViewModel {
             self.topGames.append(GameModel(game: item))
         }
         
-        completed(true, self.topGames.count)
+        completed(true)
     }
     
     func saveGame(_ game: GameModel) {

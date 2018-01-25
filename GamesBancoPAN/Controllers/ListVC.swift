@@ -39,9 +39,12 @@ class ListVC: UIViewController {
         
         let offset = next ? gamesViewModel.topGames.count : 0
         
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        
         if Utils.isConnected() {
             self.refreshBtn.isEnabled = false
             gamesViewModel.getTop(offset: offset, completed: { (isOk) in
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
                 if isOk {
                     self.collectionView.reloadData()
                     self.collectionView.finishInfiniteScroll()
@@ -52,7 +55,8 @@ class ListVC: UIViewController {
                 }
             })
         } else {
-            gamesViewModel.getTopSaved(offset: offset, completed: { (isOk, count) in
+            gamesViewModel.getTopSaved(offset: offset, completed: { (isOk) in
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
                 if isOk {
                     if offset == 0, !(self.refreshControl?.isRefreshing)! {
                         self.showAlert(title: "Alerta", message: "Você está sem internet. Serão exibidos apenas os dados obtidos na última vez em que o app foi utilizado.")

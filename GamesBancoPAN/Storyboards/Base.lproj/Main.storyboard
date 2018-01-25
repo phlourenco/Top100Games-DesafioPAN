@@ -140,7 +140,7 @@
         <!--AboutVC-->
         <scene sceneID="wGG-YE-ak4">
             <objects>
-                <viewController id="phH-qR-z9U" customClass="AboutVC" customModule="GamesBancoPAN" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="phH-qR-z9U" customClass="AboutVC" customModule="GamesBancoPAN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f0b-Ij-0iZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
